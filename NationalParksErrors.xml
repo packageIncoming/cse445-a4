@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ERROR 1: root element is NationalPark instead of NationalParks -->
-<NationalPark>
+<NationalPark xmlns="https://packageincoming.github.io/cse445-a4"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://packageincoming.github.io/cse445-a4 https://packageincoming.github.io/cse445-a4/NationalParks.xsd">
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
     <Phone>928-638-7496</Phone>
@@ -25,7 +26,6 @@
       <Zip>84767</Zip>
     </Address>
   </NationalPark>
-  <!-- ERROR 2: required attribute NearestAirport is missing on Address -->
   <NationalPark Rating="4.6">
     <Name>Rocky Mountain</Name>
     <Phone>970-586-1206</Phone>
@@ -39,7 +39,6 @@
       <Zip>80517</Zip>
     </Address>
   </NationalPark>
-  <!-- ERROR 3: Phone element is missing -->
   <NationalPark Rating="4.8">
     <Name>Great Smoky Mountains</Name>
     <Address NearestAirport="Knoxville">
@@ -74,7 +73,6 @@
       <Zip>92277</Zip>
     </Address>
   </NationalPark>
-  <!-- ERROR 5: two Name elements for one park -->
   <NationalPark Rating="4.7">
     <Name>Saguaro</Name>
     <Name>Saguaro National Park</Name>
@@ -124,7 +122,6 @@
       <Zip>84532</Zip>
     </Address>
   </NationalPark>
-  <!-- ERROR 4: Address element has no closing tag -->
   <NationalPark>
     <Name>Sequoia</Name>
     <Phone>559-565-3341</Phone>
